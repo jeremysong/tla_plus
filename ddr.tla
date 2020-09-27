@@ -1,4 +1,4 @@
------------------------------- MODULE rws_ddr ------------------------------
+------------------------------ MODULE ddr ------------------------------
 EXTENDS Integers, Sequences, FiniteSets, TLC
 CONSTANT MV \* The set of major versions. MV = 2..4
 
