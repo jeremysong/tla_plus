@@ -1,0 +1,799 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.18 of Day Month 20?? (rev: 9876efa)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 92 and seed -2997328046611269565 with 1 worker on 8 cores with 3641MB heap and 64MB offheap memory [pid: 26448] (Mac OS X 10.16 x86_64, Amazon.com Inc. 11.0.9.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /Users/jeremysong/Projects/cabbage-goat-wolf-tla/cabbage_goat_wolf_pluscal.tla
+Parsing file /private/var/folders/pl/_q8kcmp92ngfqrxnygy5j7800000gn/T/tlc-3036968891008071177/TLC.tla (jar:file:/Users/jeremysong/.vscode/extensions/alygin.vscode-tlaplus-nightly-2023.12.3106/tools/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /private/var/folders/pl/_q8kcmp92ngfqrxnygy5j7800000gn/T/tlc-3036968891008071177/FiniteSets.tla (jar:file:/Users/jeremysong/.vscode/extensions/alygin.vscode-tlaplus-nightly-2023.12.3106/tools/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/pl/_q8kcmp92ngfqrxnygy5j7800000gn/T/tlc-3036968891008071177/Naturals.tla (jar:file:/Users/jeremysong/.vscode/extensions/alygin.vscode-tlaplus-nightly-2023.12.3106/tools/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /private/var/folders/pl/_q8kcmp92ngfqrxnygy5j7800000gn/T/tlc-3036968891008071177/Sequences.tla (jar:file:/Users/jeremysong/.vscode/extensions/alygin.vscode-tlaplus-nightly-2023.12.3106/tools/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module cabbage_goat_wolf_pluscal
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2023-12-31 16:49:40)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2023-12-31 16:49:40.
+@!@!@ENDMSG 2190 @!@!@
+<<"Picking item:", {"goat"}>>
+<<"Moving from A to B", {"goat"}, {"wolf", "farmer", "cabbage", "goat"}, {}>>
+<< "After Moving from A to B",
+   {"goat"},
+   {"wolf", "cabbage"},
+   {"farmer", "goat"} >>
+<<"Picking item:", {}>>
+<<"Moving from B to A", {}, {"wolf", "cabbage"}, {"farmer", "goat"}>>
+<<"After Moving from B to A", {}, {"wolf", "farmer", "cabbage"}, {"goat"}>>
+<<"Picking item:", {"goat"}>>
+<<"Moving from B to A", {"goat"}, {"wolf", "cabbage"}, {"farmer", "goat"}>>
+<< "After Moving from B to A",
+   {"goat"},
+   {"wolf", "farmer", "cabbage", "goat"},
+   {} >>
+<<"Picking item:", {}>>
+<<"Moving from A to B", {}, {"wolf", "farmer", "cabbage"}, {"goat"}>>
+<<"After Moving from A to B", {}, {"wolf", "cabbage"}, {"farmer", "goat"}>>
+<<"Picking item:", {"wolf"}>>
+<<"Moving from A to B", {"wolf"}, {"wolf", "farmer", "cabbage"}, {"goat"}>>
+<< "After Moving from A to B",
+   {"wolf"},
+   {"cabbage"},
+   {"wolf", "farmer", "goat"} >>
+<<"Picking item:", {"cabbage"}>>
+<<"Moving from A to B", {"cabbage"}, {"wolf", "farmer", "cabbage"}, {"goat"}>>
+<< "After Moving from A to B",
+   {"cabbage"},
+   {"wolf"},
+   {"farmer", "cabbage", "goat"} >>
+<<"Picking item:", {"wolf"}>>
+<<"Moving from B to A", {"wolf"}, {"cabbage"}, {"wolf", "farmer", "goat"}>>
+<< "After Moving from B to A",
+   {"wolf"},
+   {"wolf", "farmer", "cabbage"},
+   {"goat"} >>
+<<"Picking item:", {"goat"}>>
+<<"Moving from B to A", {"goat"}, {"cabbage"}, {"wolf", "farmer", "goat"}>>
+<< "After Moving from B to A",
+   {"goat"},
+   {"farmer", "cabbage", "goat"},
+   {"wolf"} >>
+<<"Picking item:", {"cabbage"}>>
+<<"Moving from B to A", {"cabbage"}, {"wolf"}, {"farmer", "cabbage", "goat"}>>
+<< "After Moving from B to A",
+   {"cabbage"},
+   {"wolf", "farmer", "cabbage"},
+   {"goat"} >>
+<<"Picking item:", {"goat"}>>
+<<"Moving from B to A", {"goat"}, {"wolf"}, {"farmer", "cabbage", "goat"}>>
+<< "After Moving from B to A",
+   {"goat"},
+   {"wolf", "farmer", "goat"},
+   {"cabbage"} >>
+<<"Picking item:", {"cabbage"}>>
+<<"Moving from A to B", {"cabbage"}, {"farmer", "cabbage", "goat"}, {"wolf"}>>
+<< "After Moving from A to B",
+   {"cabbage"},
+   {"goat"},
+   {"wolf", "farmer", "cabbage"} >>
+<<"Picking item:", {"goat"}>>
+<<"Moving from A to B", {"goat"}, {"farmer", "cabbage", "goat"}, {"wolf"}>>
+<< "After Moving from A to B",
+   {"goat"},
+   {"cabbage"},
+   {"wolf", "farmer", "goat"} >>
+<<"Picking item:", {"wolf"}>>
+<<"Moving from A to B", {"wolf"}, {"wolf", "farmer", "goat"}, {"cabbage"}>>
+<< "After Moving from A to B",
+   {"wolf"},
+   {"goat"},
+   {"wolf", "farmer", "cabbage"} >>
+<<"Picking item:", {"goat"}>>
+<<"Moving from A to B", {"goat"}, {"wolf", "farmer", "goat"}, {"cabbage"}>>
+<< "After Moving from A to B",
+   {"goat"},
+   {"wolf"},
+   {"farmer", "cabbage", "goat"} >>
+<<"Picking item:", {}>>
+<<"Moving from B to A", {}, {"goat"}, {"wolf", "farmer", "cabbage"}>>
+<<"After Moving from B to A", {}, {"farmer", "goat"}, {"wolf", "cabbage"}>>
+<<"Picking item:", {"wolf"}>>
+<<"Moving from B to A", {"wolf"}, {"goat"}, {"wolf", "farmer", "cabbage"}>>
+<< "After Moving from B to A",
+   {"wolf"},
+   {"wolf", "farmer", "goat"},
+   {"cabbage"} >>
+<<"Picking item:", {"cabbage"}>>
+<<"Moving from B to A", {"cabbage"}, {"goat"}, {"wolf", "farmer", "cabbage"}>>
+<< "After Moving from B to A",
+   {"cabbage"},
+   {"farmer", "cabbage", "goat"},
+   {"wolf"} >>
+<<"Picking item:", {}>>
+<<"Moving from A to B", {}, {"farmer", "goat"}, {"wolf", "cabbage"}>>
+<<"After Moving from A to B", {}, {"goat"}, {"wolf", "farmer", "cabbage"}>>
+<<"Picking item:", {"goat"}>>
+<<"Moving from A to B", {"goat"}, {"farmer", "goat"}, {"wolf", "cabbage"}>>
+<< "After Moving from A to B",
+   {"goat"},
+   {},
+   {"wolf", "farmer", "cabbage", "goat"} >>
+@!@!@STARTMSG 2110:1 @!@!@
+Invariant NotSovled is violated.
+@!@!@ENDMSG 2110 @!@!@
+<<"Picking item:", {"goat"}>>
+<<"Moving from A to B", {"goat"}, {"wolf", "farmer", "cabbage", "goat"}, {}>>
+<< "After Moving from A to B",
+   {"goat"},
+   {"wolf", "cabbage"},
+   {"farmer", "goat"} >>
+<<"Picking item:", {}>>
+<<"Moving from B to A", {}, {"wolf", "cabbage"}, {"farmer", "goat"}>>
+<<"After Moving from B to A", {}, {"wolf", "farmer", "cabbage"}, {"goat"}>>
+<<"Picking item:", {"goat"}>>
+<<"Moving from B to A", {"goat"}, {"wolf", "cabbage"}, {"farmer", "goat"}>>
+<< "After Moving from B to A",
+   {"goat"},
+   {"wolf", "farmer", "cabbage", "goat"},
+   {} >>
+<<"Picking item:", {}>>
+<<"Moving from A to B", {}, {"wolf", "farmer", "cabbage"}, {"goat"}>>
+<<"After Moving from A to B", {}, {"wolf", "cabbage"}, {"farmer", "goat"}>>
+<<"Picking item:", {"wolf"}>>
+<<"Moving from A to B", {"wolf"}, {"wolf", "farmer", "cabbage"}, {"goat"}>>
+<< "After Moving from A to B",
+   {"wolf"},
+   {"cabbage"},
+   {"wolf", "farmer", "goat"} >>
+<<"Picking item:", {"cabbage"}>>
+<<"Moving from A to B", {"cabbage"}, {"wolf", "farmer", "cabbage"}, {"goat"}>>
+<< "After Moving from A to B",
+   {"cabbage"},
+   {"wolf"},
+   {"farmer", "cabbage", "goat"} >>
+<<"Picking item:", {"wolf"}>>
+<<"Moving from B to A", {"wolf"}, {"cabbage"}, {"wolf", "farmer", "goat"}>>
+<< "After Moving from B to A",
+   {"wolf"},
+   {"wolf", "farmer", "cabbage"},
+   {"goat"} >>
+<<"Picking item:", {"goat"}>>
+<<"Moving from B to A", {"goat"}, {"cabbage"}, {"wolf", "farmer", "goat"}>>
+<< "After Moving from B to A",
+   {"goat"},
+   {"farmer", "cabbage", "goat"},
+   {"wolf"} >>
+<<"Picking item:", {"cabbage"}>>
+<<"Moving from A to B", {"cabbage"}, {"farmer", "cabbage", "goat"}, {"wolf"}>>
+<< "After Moving from A to B",
+   {"cabbage"},
+   {"goat"},
+   {"wolf", "farmer", "cabbage"} >>
+<<"Picking item:", {"goat"}>>
+<<"Moving from A to B", {"goat"}, {"farmer", "cabbage", "goat"}, {"wolf"}>>
+<< "After Moving from A to B",
+   {"goat"},
+   {"cabbage"},
+   {"wolf", "farmer", "goat"} >>
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ bank_a = {"wolf", "farmer", "cabbage", "goat"}
+/\ bank_b = {}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <p1 line 93, col 7 to line 99, col 78 of module cabbage_goat_wolf_pluscal>
+/\ bank_a = {"wolf", "cabbage"}
+/\ bank_b = {"farmer", "goat"}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <p2 line 101, col 7 to line 107, col 78 of module cabbage_goat_wolf_pluscal>
+/\ bank_a = {"wolf", "farmer", "cabbage"}
+/\ bank_b = {"goat"}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <p1 line 93, col 7 to line 99, col 78 of module cabbage_goat_wolf_pluscal>
+/\ bank_a = {"cabbage"}
+/\ bank_b = {"wolf", "farmer", "goat"}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <p2 line 101, col 7 to line 107, col 78 of module cabbage_goat_wolf_pluscal>
+/\ bank_a = {"farmer", "cabbage", "goat"}
+/\ bank_b = {"wolf"}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <p1 line 93, col 7 to line 99, col 78 of module cabbage_goat_wolf_pluscal>
+/\ bank_a = {"goat"}
+/\ bank_b = {"wolf", "farmer", "cabbage"}
+
+@!@!@ENDMSG 2217 @!@!@
+<<"Picking item:", {}>>
+<<"Moving from B to A", {}, {"goat"}, {"wolf", "farmer", "cabbage"}>>
+<<"After Moving from B to A", {}, {"farmer", "goat"}, {"wolf", "cabbage"}>>
+<<"Picking item:", {"wolf"}>>
+<<"Moving from B to A", {"wolf"}, {"goat"}, {"wolf", "farmer", "cabbage"}>>
+<< "After Moving from B to A",
+   {"wolf"},
+   {"wolf", "farmer", "goat"},
+   {"cabbage"} >>
+<<"Picking item:", {"cabbage"}>>
+<<"Moving from B to A", {"cabbage"}, {"goat"}, {"wolf", "farmer", "cabbage"}>>
+<< "After Moving from B to A",
+   {"cabbage"},
+   {"farmer", "cabbage", "goat"},
+   {"wolf"} >>
+@!@!@STARTMSG 2217:4 @!@!@
+7: <p2 line 101, col 7 to line 107, col 78 of module cabbage_goat_wolf_pluscal>
+/\ bank_a = {"farmer", "goat"}
+/\ bank_b = {"wolf", "cabbage"}
+
+@!@!@ENDMSG 2217 @!@!@
+<<"Picking item:", {}>>
+<<"Moving from A to B", {}, {"farmer", "goat"}, {"wolf", "cabbage"}>>
+<<"After Moving from A to B", {}, {"goat"}, {"wolf", "farmer", "cabbage"}>>
+<<"Picking item:", {"goat"}>>
+<<"Moving from A to B", {"goat"}, {"farmer", "goat"}, {"wolf", "cabbage"}>>
+<< "After Moving from A to B",
+   {"goat"},
+   {},
+   {"wolf", "farmer", "cabbage", "goat"} >>
+@!@!@STARTMSG 2217:4 @!@!@
+8: <p1 line 93, col 7 to line 99, col 78 of module cabbage_goat_wolf_pluscal>
+/\ bank_a = {}
+/\ bank_b = {"wolf", "farmer", "cabbage", "goat"}
+
+@!@!@ENDMSG 2217 @!@!@
+<<"Picking item:", {"goat"}>>
+<<"Moving from A to B", {"goat"}, {"wolf", "farmer", "cabbage", "goat"}, {}>>
+<< "After Moving from A to B",
+   {"goat"},
+   {"wolf", "cabbage"},
+   {"farmer", "goat"} >>
+<<"Picking item:", {}>>
+<<"Moving from B to A", {}, {"wolf", "cabbage"}, {"farmer", "goat"}>>
+<<"After Moving from B to A", {}, {"wolf", "farmer", "cabbage"}, {"goat"}>>
+<<"Picking item:", {"goat"}>>
+<<"Moving from B to A", {"goat"}, {"wolf", "cabbage"}, {"farmer", "goat"}>>
+<< "After Moving from B to A",
+   {"goat"},
+   {"wolf", "farmer", "cabbage", "goat"},
+   {} >>
+<<"Picking item:", {}>>
+<<"Moving from A to B", {}, {"wolf", "farmer", "cabbage"}, {"goat"}>>
+<<"After Moving from A to B", {}, {"wolf", "cabbage"}, {"farmer", "goat"}>>
+<<"Picking item:", {"wolf"}>>
+<<"Moving from A to B", {"wolf"}, {"wolf", "farmer", "cabbage"}, {"goat"}>>
+<< "After Moving from A to B",
+   {"wolf"},
+   {"cabbage"},
+   {"wolf", "farmer", "goat"} >>
+<<"Picking item:", {"cabbage"}>>
+<<"Moving from A to B", {"cabbage"}, {"wolf", "farmer", "cabbage"}, {"goat"}>>
+<< "After Moving from A to B",
+   {"cabbage"},
+   {"wolf"},
+   {"farmer", "cabbage", "goat"} >>
+<<"Picking item:", {"wolf"}>>
+<<"Moving from B to A", {"wolf"}, {"cabbage"}, {"wolf", "farmer", "goat"}>>
+<< "After Moving from B to A",
+   {"wolf"},
+   {"wolf", "farmer", "cabbage"},
+   {"goat"} >>
+<<"Picking item:", {"goat"}>>
+<<"Moving from B to A", {"goat"}, {"cabbage"}, {"wolf", "farmer", "goat"}>>
+<< "After Moving from B to A",
+   {"goat"},
+   {"farmer", "cabbage", "goat"},
+   {"wolf"} >>
+<<"Picking item:", {"cabbage"}>>
+<<"Moving from A to B", {"cabbage"}, {"farmer", "cabbage", "goat"}, {"wolf"}>>
+<< "After Moving from A to B",
+   {"cabbage"},
+   {"goat"},
+   {"wolf", "farmer", "cabbage"} >>
+<<"Picking item:", {"goat"}>>
+<<"Moving from A to B", {"goat"}, {"farmer", "cabbage", "goat"}, {"wolf"}>>
+<< "After Moving from A to B",
+   {"goat"},
+   {"cabbage"},
+   {"wolf", "farmer", "goat"} >>
+<<"Picking item:", {}>>
+<<"Moving from B to A", {}, {"goat"}, {"wolf", "farmer", "cabbage"}>>
+<<"After Moving from B to A", {}, {"farmer", "goat"}, {"wolf", "cabbage"}>>
+<<"Picking item:", {"wolf"}>>
+<<"Moving from B to A", {"wolf"}, {"goat"}, {"wolf", "farmer", "cabbage"}>>
+<< "After Moving from B to A",
+   {"wolf"},
+   {"wolf", "farmer", "goat"},
+   {"cabbage"} >>
+<<"Picking item:", {"cabbage"}>>
+<<"Moving from B to A", {"cabbage"}, {"goat"}, {"wolf", "farmer", "cabbage"}>>
+<< "After Moving from B to A",
+   {"cabbage"},
+   {"farmer", "cabbage", "goat"},
+   {"wolf"} >>
+<<"Picking item:", {}>>
+<<"Moving from A to B", {}, {"farmer", "goat"}, {"wolf", "cabbage"}>>
+<<"After Moving from A to B", {}, {"goat"}, {"wolf", "farmer", "cabbage"}>>
+<<"Picking item:", {"goat"}>>
+<<"Moving from A to B", {"goat"}, {"farmer", "goat"}, {"wolf", "cabbage"}>>
+<< "After Moving from A to B",
+   {"goat"},
+   {},
+   {"wolf", "farmer", "cabbage", "goat"} >>
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2023-12-31 16:49:40
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 89, col 1 to line 89, col 4 of module cabbage_goat_wolf_pluscal>: 3:3
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 90, col 22 to line 90, col 42 of module cabbage_goat_wolf_pluscal: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 90, col 22 to line 90, col 26 of module cabbage_goat_wolf_pluscal: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 90, col 35 to line 90, col 42 of module cabbage_goat_wolf_pluscal: 3:6
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 90, col 36 to line 90, col 41 of module cabbage_goat_wolf_pluscal: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 91, col 12 to line 91, col 22 of module cabbage_goat_wolf_pluscal: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 91, col 21 to line 91, col 22 of module cabbage_goat_wolf_pluscal: 3:1
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<p1 line 93, col 1 to line 93, col 2 of module cabbage_goat_wolf_pluscal>: 5:26
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 93, col 10 to line 93, col 26 of module cabbage_goat_wolf_pluscal: 35
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 93, col 10 to line 93, col 15 of module cabbage_goat_wolf_pluscal: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 93, col 21 to line 93, col 26 of module cabbage_goat_wolf_pluscal: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 95, col 15 to line 95, col 49 of module cabbage_goat_wolf_pluscal: 25
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 95, col 23 to line 95, col 47 of module cabbage_goat_wolf_pluscal: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 96, col 15 to line 96, col 70 of module cabbage_goat_wolf_pluscal: 25
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 96, col 23 to line 96, col 68 of module cabbage_goat_wolf_pluscal: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 15 to line 97, col 60 of module cabbage_goat_wolf_pluscal: 25
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 97, col 26 to line 97, col 59 of module cabbage_goat_wolf_pluscal: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 97, col 26 to line 97, col 47 of module cabbage_goat_wolf_pluscal: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 97, col 26 to line 97, col 31 of module cabbage_goat_wolf_pluscal: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||line 97, col 40 to line 97, col 47 of module cabbage_goat_wolf_pluscal: 26:46
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 97, col 41 to line 97, col 46 of module cabbage_goat_wolf_pluscal: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 97, col 56 to line 97, col 59 of module cabbage_goat_wolf_pluscal: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 98, col 15 to line 98, col 55 of module cabbage_goat_wolf_pluscal: 25
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 98, col 25 to line 98, col 55 of module cabbage_goat_wolf_pluscal: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 99, col 15 to line 99, col 78 of module cabbage_goat_wolf_pluscal: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 22 to line 94, col 45 of module cabbage_goat_wolf_pluscal: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 75, col 19 to line 79, col 1 of module cabbage_goat_wolf_pluscal: 13:123
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 76, col 5 to line 78, col 29 of module cabbage_goat_wolf_pluscal: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 76, col 8 to line 76, col 43 of module cabbage_goat_wolf_pluscal: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 72, col 19 to line 72, col 113 of module cabbage_goat_wolf_pluscal: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 72, col 19 to line 72, col 36 of module cabbage_goat_wolf_pluscal: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 72, col 41 to line 72, col 113 of module cabbage_goat_wolf_pluscal: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 72, col 42 to line 72, col 75 of module cabbage_goat_wolf_pluscal: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||||line 72, col 42 to line 72, col 56 of module cabbage_goat_wolf_pluscal: 58:91
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 72, col 43 to line 72, col 49 of module cabbage_goat_wolf_pluscal: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 72, col 52 to line 72, col 55 of module cabbage_goat_wolf_pluscal: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 72, col 65 to line 72, col 75 of module cabbage_goat_wolf_pluscal: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 72, col 82 to line 72, col 112 of module cabbage_goat_wolf_pluscal: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||||line 72, col 82 to line 72, col 93 of module cabbage_goat_wolf_pluscal: 49:70
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 72, col 83 to line 72, col 86 of module cabbage_goat_wolf_pluscal: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 72, col 89 to line 72, col 92 of module cabbage_goat_wolf_pluscal: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 72, col 102 to line 72, col 112 of module cabbage_goat_wolf_pluscal: 49
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 76, col 17 to line 76, col 42 of module cabbage_goat_wolf_pluscal: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 77, col 8 to line 77, col 46 of module cabbage_goat_wolf_pluscal: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 72, col 19 to line 72, col 113 of module cabbage_goat_wolf_pluscal: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 77, col 17 to line 77, col 45 of module cabbage_goat_wolf_pluscal: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 77, col 17 to line 77, col 33 of module cabbage_goat_wolf_pluscal: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 77, col 17 to line 77, col 17 of module cabbage_goat_wolf_pluscal: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 77, col 26 to line 77, col 33 of module cabbage_goat_wolf_pluscal: 45:60
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 77, col 27 to line 77, col 32 of module cabbage_goat_wolf_pluscal: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 77, col 42 to line 77, col 45 of module cabbage_goat_wolf_pluscal: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 78, col 8 to line 78, col 29 of module cabbage_goat_wolf_pluscal: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 75, col 30 to line 75, col 50 of module cabbage_goat_wolf_pluscal: 13:323
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 75, col 38 to line 75, col 49 of module cabbage_goat_wolf_pluscal: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 94, col 31 to line 94, col 36 of module cabbage_goat_wolf_pluscal: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 94, col 39 to line 94, col 44 of module cabbage_goat_wolf_pluscal: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<p2 line 101, col 1 to line 101, col 2 of module cabbage_goat_wolf_pluscal>: 4:23
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 101, col 10 to line 101, col 26 of module cabbage_goat_wolf_pluscal: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 101, col 10 to line 101, col 15 of module cabbage_goat_wolf_pluscal: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 101, col 21 to line 101, col 26 of module cabbage_goat_wolf_pluscal: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 103, col 15 to line 103, col 49 of module cabbage_goat_wolf_pluscal: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 104, col 15 to line 104, col 70 of module cabbage_goat_wolf_pluscal: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 105, col 15 to line 105, col 60 of module cabbage_goat_wolf_pluscal: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 105, col 26 to line 105, col 59 of module cabbage_goat_wolf_pluscal: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 105, col 26 to line 105, col 47 of module cabbage_goat_wolf_pluscal: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 105, col 26 to line 105, col 31 of module cabbage_goat_wolf_pluscal: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||line 105, col 40 to line 105, col 47 of module cabbage_goat_wolf_pluscal: 23:46
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 105, col 41 to line 105, col 46 of module cabbage_goat_wolf_pluscal: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 105, col 56 to line 105, col 59 of module cabbage_goat_wolf_pluscal: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 106, col 15 to line 106, col 55 of module cabbage_goat_wolf_pluscal: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 107, col 15 to line 107, col 78 of module cabbage_goat_wolf_pluscal: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 102, col 22 to line 102, col 45 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 75, col 19 to line 79, col 1 of module cabbage_goat_wolf_pluscal: 10:90
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 76, col 5 to line 78, col 29 of module cabbage_goat_wolf_pluscal: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 76, col 8 to line 76, col 43 of module cabbage_goat_wolf_pluscal: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 72, col 19 to line 72, col 113 of module cabbage_goat_wolf_pluscal: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 72, col 19 to line 72, col 36 of module cabbage_goat_wolf_pluscal: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 72, col 41 to line 72, col 113 of module cabbage_goat_wolf_pluscal: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 72, col 42 to line 72, col 75 of module cabbage_goat_wolf_pluscal: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||||line 72, col 42 to line 72, col 56 of module cabbage_goat_wolf_pluscal: 34:43
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 72, col 43 to line 72, col 49 of module cabbage_goat_wolf_pluscal: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 72, col 52 to line 72, col 55 of module cabbage_goat_wolf_pluscal: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 72, col 65 to line 72, col 75 of module cabbage_goat_wolf_pluscal: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 72, col 82 to line 72, col 112 of module cabbage_goat_wolf_pluscal: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||||line 72, col 82 to line 72, col 93 of module cabbage_goat_wolf_pluscal: 33:48
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 72, col 83 to line 72, col 86 of module cabbage_goat_wolf_pluscal: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 72, col 89 to line 72, col 92 of module cabbage_goat_wolf_pluscal: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 72, col 102 to line 72, col 112 of module cabbage_goat_wolf_pluscal: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 76, col 17 to line 76, col 42 of module cabbage_goat_wolf_pluscal: 34
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 77, col 8 to line 77, col 46 of module cabbage_goat_wolf_pluscal: 30
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 72, col 19 to line 72, col 113 of module cabbage_goat_wolf_pluscal: 30
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 77, col 17 to line 77, col 45 of module cabbage_goat_wolf_pluscal: 30
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 77, col 17 to line 77, col 33 of module cabbage_goat_wolf_pluscal: 30
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 77, col 17 to line 77, col 17 of module cabbage_goat_wolf_pluscal: 30
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 77, col 26 to line 77, col 33 of module cabbage_goat_wolf_pluscal: 30:60
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 77, col 27 to line 77, col 32 of module cabbage_goat_wolf_pluscal: 30
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 77, col 42 to line 77, col 45 of module cabbage_goat_wolf_pluscal: 30
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 78, col 8 to line 78, col 29 of module cabbage_goat_wolf_pluscal: 30
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 75, col 30 to line 75, col 50 of module cabbage_goat_wolf_pluscal: 10:206
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 75, col 38 to line 75, col 49 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 102, col 31 to line 102, col 36 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 102, col 39 to line 102, col 44 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<TypeOK line 69, col 1 to line 69, col 6 of module cabbage_goat_wolf_pluscal>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 69, col 11 to line 70, col 65 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<AllSafe line 81, col 1 to line 81, col 7 of module cabbage_goat_wolf_pluscal>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 81, col 12 to line 81, col 31 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 73, col 15 to line 73, col 40 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 73, col 15 to line 73, col 25 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 72, col 19 to line 72, col 113 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 72, col 19 to line 72, col 36 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 72, col 41 to line 72, col 113 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 72, col 42 to line 72, col 75 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 72, col 42 to line 72, col 56 of module cabbage_goat_wolf_pluscal: 5:7
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 72, col 43 to line 72, col 49 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 72, col 52 to line 72, col 55 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 72, col 65 to line 72, col 75 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 72, col 82 to line 72, col 112 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 72, col 82 to line 72, col 93 of module cabbage_goat_wolf_pluscal: 5:7
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 72, col 83 to line 72, col 86 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 72, col 89 to line 72, col 92 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 72, col 102 to line 72, col 112 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 73, col 24 to line 73, col 24 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 73, col 30 to line 73, col 40 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 72, col 19 to line 72, col 113 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 72, col 19 to line 72, col 36 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 72, col 41 to line 72, col 113 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 72, col 42 to line 72, col 75 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 72, col 42 to line 72, col 56 of module cabbage_goat_wolf_pluscal: 5:7
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 72, col 43 to line 72, col 49 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 72, col 52 to line 72, col 55 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 72, col 65 to line 72, col 75 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 72, col 82 to line 72, col 112 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 72, col 82 to line 72, col 93 of module cabbage_goat_wolf_pluscal: 5:7
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 72, col 83 to line 72, col 86 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 72, col 89 to line 72, col 92 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 72, col 102 to line 72, col 112 of module cabbage_goat_wolf_pluscal: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 73, col 39 to line 73, col 39 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 81, col 17 to line 81, col 22 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 81, col 25 to line 81, col 30 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<NotSovled line 82, col 1 to line 82, col 9 of module cabbage_goat_wolf_pluscal>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 82, col 14 to line 82, col 45 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 82, col 15 to line 82, col 35 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 82, col 15 to line 82, col 19 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 82, col 28 to line 82, col 35 of module cabbage_goat_wolf_pluscal: 10:20
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 82, col 29 to line 82, col 34 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 82, col 40 to line 82, col 45 of module cabbage_goat_wolf_pluscal: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(8) at 2023-12-31 16:49:40: 20 states generated (817 s/min), 10 distinct states found (408 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+20 states generated, 10 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 8.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1491ms at (2023-12-31 16:49:40)
+@!@!@ENDMSG 2186 @!@!@

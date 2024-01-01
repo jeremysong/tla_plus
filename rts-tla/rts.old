@@ -1,0 +1,72 @@
+-------------- MODULE RTS --------------
+EXTENDS Naturals, FiniteSets, TLC
+
+OtsHost == {1, 2}
+PublishProcess == {0}
+
+(* --algorithm Rts {
+    variables
+      store = {};
+      version = 0;
+      batches = <<>>;
+
+    fair process (Host \in OtsHost) {
+        READ:
+            store := {1};
+            print(store);
+    }
+
+    fair process (Publisher \in PublishProcess) {
+        \* Print <<"something", batches>>;
+        WRITE:
+            skip;
+    }
+}
+*)
+\* BEGIN TRANSLATION (chksum(pcal) = "935e9557" /\ chksum(tla) = "453e6945")
+VARIABLES store, version, batches, pc
+
+vars == << store, version, batches, pc >>
+
+ProcSet == (OtsHost) \cup (PublishProcess)
+
+Init == (* Global variables *)
+        /\ store = {}
+        /\ version = 0
+        /\ batches = <<>>
+        /\ pc = [self \in ProcSet |-> CASE self \in OtsHost -> "READ"
+                                        [] self \in PublishProcess -> "WRITE"]
+
+READ(self) == /\ pc[self] = "READ"
+              /\ store' = {1}
+              /\ PrintT((store'))
+              /\ pc' = [pc EXCEPT ![self] = "Done"]
+              /\ UNCHANGED << version, batches >>
+
+Host(self) == READ(self)
+
+WRITE(self) == /\ pc[self] = "WRITE"
+               /\ TRUE
+               /\ pc' = [pc EXCEPT ![self] = "Done"]
+               /\ UNCHANGED << store, version, batches >>
+
+Publisher(self) == WRITE(self)
+
+(* Allow infinite stuttering to prevent deadlock on termination. *)
+Terminating == /\ \A self \in ProcSet: pc[self] = "Done"
+               /\ UNCHANGED vars
+
+Next == (\E self \in OtsHost: Host(self))
+           \/ (\E self \in PublishProcess: Publisher(self))
+           \/ Terminating
+
+Spec == /\ Init /\ [][Next]_vars
+        /\ \A self \in OtsHost : WF_vars(Host(self))
+        /\ \A self \in PublishProcess : WF_vars(Publisher(self))
+
+Termination == <>(\A self \in ProcSet: pc[self] = "Done")
+
+\* END TRANSLATION 
+
+
+=====================
