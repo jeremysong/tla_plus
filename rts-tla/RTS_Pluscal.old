@@ -5,7 +5,7 @@ CONSTANTS NULL, PUBLISHING, FAILED, SUCCEEDED, MAX_VERSION
 
 PublishProcess == {1, 2}
 OtsHost == {10, 11, 12}
-CustomerIds == {100, 101, 102, 103, 104, 105}
+CustomerIds == {100, 101, 102, 103}
 
 (* --algorithm Rts {
     variables
@@ -37,7 +37,9 @@ CustomerIds == {100, 101, 102, 103, 104, 105}
     }
 
     fair process (Publisher \in PublishProcess)
-        variable v; {
+        variable v = 0; {
+        PUBLISH:
+        while (version < MAX_VERSION) {
         INIT:
             v := version;
             version := version + 1;
@@ -52,11 +54,12 @@ CustomerIds == {100, 101, 102, 103, 104, 105}
             with (status \in {FAILED, SUCCEEDED}) {
                 batches := v :> status @@ batches;
                 \* print(batches);
-            }      
+            }
+        }
     }
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "26e5e708" /\ chksum(tla) = "9ddff65a")
+\* BEGIN TRANSLATION (chksum(pcal) = "cb9608d0" /\ chksum(tla) = "3bf92335")
 \* Process variable v of process Host at line 25 col 18 changed to v_
 CONSTANT defaultInitValue
 VARIABLES memorydb, version, batches, pc
@@ -81,28 +84,34 @@ Init == (* Global variables *)
         (* Process Host *)
         /\ v_ = [self \in OtsHost |-> defaultInitValue]
         (* Process Publisher *)
-        /\ v = [self \in PublishProcess |-> defaultInitValue]
+        /\ v = [self \in PublishProcess |-> 0]
         /\ pc = [self \in ProcSet |-> CASE self \in OtsHost -> "READ"
-                                        [] self \in PublishProcess -> "INIT"]
+                                        [] self \in PublishProcess -> "PUBLISH"]
 
 READ(self) == /\ pc[self] = "READ"
               /\ \E id \in CustomerIds:
                    IF id \in DOMAIN memorydb
                       THEN /\ v_' = [v_ EXCEPT ![self] = memorydb[id]]
                            /\ Assert(id \in DOMAIN memorydb, 
-                                     "Failure of assertion at line 31, column 21.")
+                                     "Failure of assertion at line 32, column 21.")
                       ELSE /\ TRUE
                            /\ v_' = v_
-              /\ pc' = [pc EXCEPT ![self] = "Done"]
+              /\ pc' = [pc EXCEPT ![self] = "READ"]
               /\ UNCHANGED << memorydb, version, batches, v >>
 
 Host(self) == READ(self)
+
+PUBLISH(self) == /\ pc[self] = "PUBLISH"
+                 /\ IF version < MAX_VERSION
+                       THEN /\ pc' = [pc EXCEPT ![self] = "INIT"]
+                       ELSE /\ pc' = [pc EXCEPT ![self] = "Done"]
+                 /\ UNCHANGED << memorydb, version, batches, v_, v >>
 
 INIT(self) == /\ pc[self] = "INIT"
               /\ v' = [v EXCEPT ![self] = version]
               /\ version' = version + 1
               /\ Assert(v'[self] \notin DOMAIN batches, 
-                        "Failure of assertion at line 43, column 13.")
+                        "Failure of assertion at line 47, column 13.")
               /\ batches' = (v'[self] :> PUBLISHING @@ batches)
               /\ pc' = [pc EXCEPT ![self] = "WRITE"]
               /\ UNCHANGED << memorydb, v_ >>
@@ -116,24 +125,18 @@ WRITE(self) == /\ pc[self] = "WRITE"
 STATUS(self) == /\ pc[self] = "STATUS"
                 /\ \E status \in {FAILED, SUCCEEDED}:
                      batches' = (v[self] :> status @@ batches)
-                /\ pc' = [pc EXCEPT ![self] = "Done"]
+                /\ pc' = [pc EXCEPT ![self] = "PUBLISH"]
                 /\ UNCHANGED << memorydb, version, v_, v >>
 
-Publisher(self) == INIT(self) \/ WRITE(self) \/ STATUS(self)
-
-(* Allow infinite stuttering to prevent deadlock on termination. *)
-Terminating == /\ \A self \in ProcSet: pc[self] = "Done"
-               /\ UNCHANGED vars
+Publisher(self) == PUBLISH(self) \/ INIT(self) \/ WRITE(self)
+                      \/ STATUS(self)
 
 Next == (\E self \in OtsHost: Host(self))
            \/ (\E self \in PublishProcess: Publisher(self))
-           \/ Terminating
 
 Spec == /\ Init /\ [][Next]_vars
         /\ \A self \in OtsHost : WF_vars(Host(self))
         /\ \A self \in PublishProcess : WF_vars(Publisher(self))
-
-Termination == <>(\A self \in ProcSet: pc[self] = "Done")
 
 \* END TRANSLATION 
 

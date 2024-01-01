@@ -1,18 +1,18 @@
 @!@!@STARTMSG 2262:0 @!@!@
-TLC2 Version 2.18 of Day Month 20?? (rev: 017168c)
+TLC2 Version 2.18 of Day Month 20?? (rev: 9876efa)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 122 and seed 7018733470063149399 with 1 worker on 8 cores with 3641MB heap and 64MB offheap memory [pid: 25435] (Mac OS X 10.16 x86_64, Amazon.com Inc. 11.0.9.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 129 and seed 3964209442037723498 with 1 worker on 8 cores with 3641MB heap and 64MB offheap memory [pid: 34914] (Mac OS X 10.16 x86_64, Amazon.com Inc. 11.0.9.1 x86_64, MSBDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
-Parsing file /Users/jeremysong/Projects/rts-tla/RTS_Pluscal.tla
+Parsing file /Users/jeremysong/Projects/tla_plus/rts-tla/RTS_Pluscal.tla
 Warning: symbols were renamed.
-Parsing file /private/var/folders/pl/_q8kcmp92ngfqrxnygy5j7800000gn/T/tlc-14023155062521845494/Naturals.tla (jar:file:/Users/jeremysong/.vscode/extensions/alygin.vscode-tlaplus-nightly-2023.11.2906/tools/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
-Parsing file /private/var/folders/pl/_q8kcmp92ngfqrxnygy5j7800000gn/T/tlc-14023155062521845494/FiniteSets.tla (jar:file:/Users/jeremysong/.vscode/extensions/alygin.vscode-tlaplus-nightly-2023.11.2906/tools/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
-Parsing file /private/var/folders/pl/_q8kcmp92ngfqrxnygy5j7800000gn/T/tlc-14023155062521845494/TLC.tla (jar:file:/Users/jeremysong/.vscode/extensions/alygin.vscode-tlaplus-nightly-2023.11.2906/tools/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
-Parsing file /private/var/folders/pl/_q8kcmp92ngfqrxnygy5j7800000gn/T/tlc-14023155062521845494/Sequences.tla (jar:file:/Users/jeremysong/.vscode/extensions/alygin.vscode-tlaplus-nightly-2023.11.2906/tools/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /private/var/folders/pl/_q8kcmp92ngfqrxnygy5j7800000gn/T/tlc-6965880772930925545/Naturals.tla (jar:file:/Users/jeremysong/.vscode/extensions/alygin.vscode-tlaplus-nightly-2023.12.3106/tools/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /private/var/folders/pl/_q8kcmp92ngfqrxnygy5j7800000gn/T/tlc-6965880772930925545/FiniteSets.tla (jar:file:/Users/jeremysong/.vscode/extensions/alygin.vscode-tlaplus-nightly-2023.12.3106/tools/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/pl/_q8kcmp92ngfqrxnygy5j7800000gn/T/tlc-6965880772930925545/TLC.tla (jar:file:/Users/jeremysong/.vscode/extensions/alygin.vscode-tlaplus-nightly-2023.12.3106/tools/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /private/var/folders/pl/_q8kcmp92ngfqrxnygy5j7800000gn/T/tlc-6965880772930925545/Sequences.tla (jar:file:/Users/jeremysong/.vscode/extensions/alygin.vscode-tlaplus-nightly-2023.12.3106/tools/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
 Semantic processing of module Naturals
 Semantic processing of module Sequences
 Semantic processing of module FiniteSets
@@ -22,216 +22,237 @@ Semantic processing of module RTS_Pluscal
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2023-12-31 16:31:16)
+Starting... (2023-12-31 17:11:00)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2023-12-31 16:31:16.
+Finished computing initial states: 1 distinct state generated at 2023-12-31 17:11:00.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(8) at 2023-12-31 16:31:19: 973,896 states generated (973,896 s/min), 108,564 distinct states found (108,564 ds/min), 73,167 states left on queue.
+Progress(12) at 2023-12-31 17:11:03: 950,568 states generated (950,568 s/min), 121,887 distinct states found (121,887 ds/min), 62,961 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
   Estimates of the probability that TLC did not check all reachable states
   because two distinct states had the same fingerprint:
-  calculated (optimistic):  val = 1.4E-7
-  based on the actual fingerprints:  val = 4.5E-7
+  calculated (optimistic):  val = 2.2E-6
+  based on the actual fingerprints:  val = 2.1E-6
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-12-31 16:31:31
+The coverage statistics at 2023-12-31 17:11:50
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
-<Init line 77, col 1 to line 77, col 4 of module RTS_Pluscal>: 1:1
+<Init line 80, col 1 to line 80, col 4 of module RTS_Pluscal>: 1:1
 @!@!@ENDMSG 2773 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 78, col 12 to line 78, col 26 of module RTS_Pluscal: 1
+  line 81, col 12 to line 81, col 26 of module RTS_Pluscal: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 80, col 12 to line 80, col 25 of module RTS_Pluscal: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  line 82, col 17 to line 82, col 55 of module RTS_Pluscal: 1:3
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 82, col 27 to line 82, col 33 of module RTS_Pluscal: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 84, col 26 to line 84, col 39 of module RTS_Pluscal: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 85, col 12 to line 86, col 77 of module RTS_Pluscal: 1
+  line 83, col 12 to line 83, col 25 of module RTS_Pluscal: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2775:0 @!@!@
-  line 84, col 16 to line 84, col 61 of module RTS_Pluscal: 1:2
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  |line 85, col 17 to line 86, col 77 of module RTS_Pluscal: 1:5
+  line 85, col 17 to line 85, col 55 of module RTS_Pluscal: 1:3
 @!@!@ENDMSG 2775 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 85, col 27 to line 85, col 33 of module RTS_Pluscal: 1
+  |line 85, col 27 to line 85, col 33 of module RTS_Pluscal: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 87, col 16 to line 87, col 46 of module RTS_Pluscal: 1:2
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 87, col 26 to line 87, col 39 of module RTS_Pluscal: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 12 to line 89, col 80 of module RTS_Pluscal: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 88, col 17 to line 89, col 80 of module RTS_Pluscal: 1:5
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 88, col 27 to line 88, col 33 of module RTS_Pluscal: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<READ line 88, col 1 to line 88, col 10 of module RTS_Pluscal>: 80409:6531930
+<READ line 91, col 1 to line 91, col 10 of module RTS_Pluscal>: 167490:21049320
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 88, col 18 to line 88, col 34 of module RTS_Pluscal: 2177310
+  line 91, col 18 to line 91, col 34 of module RTS_Pluscal: 10524660
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 88, col 18 to line 88, col 25 of module RTS_Pluscal: 1088655
+  |line 91, col 18 to line 91, col 25 of module RTS_Pluscal: 5262330
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 90, col 23 to line 90, col 44 of module RTS_Pluscal: 6531930
+  line 93, col 23 to line 93, col 44 of module RTS_Pluscal: 21049320
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 28 to line 93, col 83 of module RTS_Pluscal: 4334472
+  line 94, col 28 to line 96, col 83 of module RTS_Pluscal: 15930960
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 28 to line 95, col 38 of module RTS_Pluscal: 2197458
+  line 97, col 28 to line 98, col 38 of module RTS_Pluscal: 5118360
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 89, col 28 to line 89, col 38 of module RTS_Pluscal: 1088655
+  line 92, col 28 to line 92, col 38 of module RTS_Pluscal: 5262330
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 18 to line 96, col 51 of module RTS_Pluscal: 6531930
+  line 99, col 18 to line 99, col 51 of module RTS_Pluscal: 21049320
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 97, col 18 to line 97, col 62 of module RTS_Pluscal: 6531930
+  line 100, col 18 to line 100, col 62 of module RTS_Pluscal: 21049320
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<INIT line 101, col 1 to line 101, col 10 of module RTS_Pluscal>: 1516:3028
+<PUBLISH line 104, col 1 to line 104, col 13 of module RTS_Pluscal>: 736424:1359486
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 101, col 18 to line 101, col 34 of module RTS_Pluscal: 728798
+  line 104, col 21 to line 104, col 40 of module RTS_Pluscal: 4867706
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 101, col 18 to line 101, col 25 of module RTS_Pluscal: 725770
+  |line 104, col 21 to line 104, col 28 of module RTS_Pluscal: 3508220
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 102, col 18 to line 102, col 50 of module RTS_Pluscal: 3028
+  line 105, col 24 to line 105, col 44 of module RTS_Pluscal: 1359486
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 103, col 18 to line 103, col 39 of module RTS_Pluscal: 3028
+  line 106, col 29 to line 106, col 65 of module RTS_Pluscal: 1206
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 104, col 18 to line 105, col 70 of module RTS_Pluscal: 3028
+  line 107, col 29 to line 107, col 65 of module RTS_Pluscal: 1358280
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 106, col 18 to line 106, col 63 of module RTS_Pluscal: 3028
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 107, col 18 to line 107, col 52 of module RTS_Pluscal: 3028
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 108, col 18 to line 108, col 45 of module RTS_Pluscal: 3028
+  line 108, col 21 to line 108, col 69 of module RTS_Pluscal: 1359486
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<WRITE line 110, col 1 to line 110, col 11 of module RTS_Pluscal>: 33243:381402
+<INIT line 110, col 1 to line 110, col 10 of module RTS_Pluscal>: 19115:36786
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 110, col 19 to line 110, col 36 of module RTS_Pluscal: 731824
+  line 110, col 18 to line 110, col 34 of module RTS_Pluscal: 3545006
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 110, col 19 to line 110, col 26 of module RTS_Pluscal: 725770
+  |line 110, col 18 to line 110, col 25 of module RTS_Pluscal: 3508220
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 112, col 33 to line 112, col 68 of module RTS_Pluscal: 381402
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  ||line 112, col 33 to line 112, col 56 of module RTS_Pluscal: 381402:1162368
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 112, col 21 to line 112, col 68 of module RTS_Pluscal: 381402
+  line 111, col 18 to line 111, col 50 of module RTS_Pluscal: 36786
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 112, col 41 to line 112, col 43 of module RTS_Pluscal: 381402
+  line 112, col 18 to line 112, col 39 of module RTS_Pluscal: 36786
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 112, col 61 to line 112, col 68 of module RTS_Pluscal: 381402
+  line 113, col 18 to line 114, col 70 of module RTS_Pluscal: 36786
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 111, col 31 to line 111, col 56 of module RTS_Pluscal: 6054
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  |line 111, col 31 to line 111, col 49 of module RTS_Pluscal: 6054:1543770
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 111, col 38 to line 111, col 48 of module RTS_Pluscal: 6054
+  line 115, col 18 to line 115, col 63 of module RTS_Pluscal: 36786
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 111, col 53 to line 111, col 56 of module RTS_Pluscal: 6054
+  line 116, col 18 to line 116, col 52 of module RTS_Pluscal: 36786
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 113, col 19 to line 113, col 54 of module RTS_Pluscal: 381402
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 114, col 19 to line 114, col 57 of module RTS_Pluscal: 381402
+  line 117, col 18 to line 117, col 45 of module RTS_Pluscal: 36786
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<STATUS line 116, col 1 to line 116, col 12 of module RTS_Pluscal>: 247716:477792
+<WRITE line 119, col 1 to line 119, col 11 of module RTS_Pluscal>: 113290:1110720
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 116, col 20 to line 116, col 38 of module RTS_Pluscal: 964666
+  line 119, col 19 to line 119, col 36 of module RTS_Pluscal: 3582268
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 116, col 20 to line 116, col 27 of module RTS_Pluscal: 725770
+  |line 119, col 19 to line 119, col 26 of module RTS_Pluscal: 3508220
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 118, col 22 to line 118, col 62 of module RTS_Pluscal: 477792
+  line 121, col 21 to line 121, col 68 of module RTS_Pluscal: 1110720
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 121, col 33 to line 121, col 68 of module RTS_Pluscal: 1110720
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2775:0 @!@!@
-  line 117, col 34 to line 117, col 52 of module RTS_Pluscal: 238896:716688
+  ||line 121, col 33 to line 121, col 56 of module RTS_Pluscal: 1110720:2369536
 @!@!@ENDMSG 2775 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 117, col 35 to line 117, col 40 of module RTS_Pluscal: 238896
+  |||line 121, col 41 to line 121, col 43 of module RTS_Pluscal: 1110720
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 117, col 43 to line 117, col 51 of module RTS_Pluscal: 238896
+  ||line 121, col 61 to line 121, col 68 of module RTS_Pluscal: 1110720
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 119, col 20 to line 119, col 53 of module RTS_Pluscal: 477792
+  line 120, col 31 to line 120, col 56 of module RTS_Pluscal: 74048
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 120, col 31 to line 120, col 49 of module RTS_Pluscal: 74048:3480256
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 120, col 38 to line 120, col 48 of module RTS_Pluscal: 74048
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 120, col 20 to line 120, col 59 of module RTS_Pluscal: 477792
+  |line 120, col 53 to line 120, col 56 of module RTS_Pluscal: 74048
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 122, col 19 to line 122, col 54 of module RTS_Pluscal: 1110720
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 123, col 19 to line 123, col 57 of module RTS_Pluscal: 1110720
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<STATUS line 125, col 1 to line 125, col 12 of module RTS_Pluscal>: 717790:1359240
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 125, col 20 to line 125, col 38 of module RTS_Pluscal: 4187840
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 125, col 20 to line 125, col 27 of module RTS_Pluscal: 3508220
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 127, col 22 to line 127, col 62 of module RTS_Pluscal: 1359240
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 126, col 34 to line 126, col 52 of module RTS_Pluscal: 679620:2038860
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 126, col 35 to line 126, col 40 of module RTS_Pluscal: 679620
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 126, col 43 to line 126, col 51 of module RTS_Pluscal: 679620
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 128, col 20 to line 128, col 56 of module RTS_Pluscal: 1359240
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 129, col 20 to line 129, col 59 of module RTS_Pluscal: 1359240
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2774:0 @!@!@
-<TypeOK line 65, col 1 to line 65, col 6 of module RTS_Pluscal>
+<TypeOK line 68, col 1 to line 68, col 6 of module RTS_Pluscal>
 @!@!@ENDMSG 2774 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 65, col 11 to line 67, col 84 of module RTS_Pluscal: 362885
+  line 68, col 11 to line 70, col 84 of module RTS_Pluscal: 1754110
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 65, col 14 to line 65, col 50 of module RTS_Pluscal: 362885
+  |line 68, col 14 to line 68, col 50 of module RTS_Pluscal: 1754110
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 66, col 14 to line 66, col 25 of module RTS_Pluscal: 362885
+  |line 69, col 14 to line 69, col 25 of module RTS_Pluscal: 1754110
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 67, col 14 to line 67, col 84 of module RTS_Pluscal: 362885
+  |line 70, col 14 to line 70, col 84 of module RTS_Pluscal: 1754110
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 67, col 39 to line 67, col 84 of module RTS_Pluscal: 722742
+  ||line 70, col 39 to line 70, col 84 of module RTS_Pluscal: 5113448
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 67, col 23 to line 67, col 36 of module RTS_Pluscal: 362885
+  ||line 70, col 23 to line 70, col 36 of module RTS_Pluscal: 1754110
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(10) at 2023-12-31 16:31:31: 7,394,153 states generated (27,788,861 s/min), 362,885 distinct states found (1,363,802 ds/min), 0 states left on queue.
+Progress(18) at 2023-12-31 17:11:50: 24,915,553 states generated (29,039,670 s/min), 1,754,110 distinct states found (2,044,456 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-7394153 states generated, 362885 distinct states found, 0 states left on queue.
+24915553 states generated, 1754110 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
-The depth of the complete state graph search is 10.
+The depth of the complete state graph search is 18.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2268:0 @!@!@
-The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 31 and the 95th percentile is 4).
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 30 and the 95th percentile is 3).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 15972ms at (2023-12-31 16:31:31)
+Finished in 51490ms at (2023-12-31 17:11:50)
 @!@!@ENDMSG 2186 @!@!@
