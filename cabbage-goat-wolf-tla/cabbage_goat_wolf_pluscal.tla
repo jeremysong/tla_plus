@@ -20,9 +20,11 @@ Items == {CABBAGE, GOAT, WOLF}
         TypeOK == /\ bank_a \intersect bank_b = {}
                   /\ bank_a \union bank_b = {CABBAGE, GOAT, WOLF, FARMER}
         
+        \* If farmer is not at the bank, make sure all items are safe
         SafeBank(bank) == FARMER \notin bank => ({CABBAGE, GOAT} \notin SUBSET bank) /\ ({WOLF, GOAT} \notin SUBSET bank)
         Safe(a, b) == SafeBank(a) /\ SafeBank(b)
         
+        \* Returns either 1 or 0 item for farmer to carry to the other bank
         SafeItem(a, b) == { item \in SUBSET (a \ {FARMER}):
             /\ SafeBank(a \ ({FARMER} \union item))
             /\ SafeBank(b \union {FARMER} \union item)
